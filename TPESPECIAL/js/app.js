@@ -42,3 +42,9 @@ const imageSlider = () => {
 }
 navSlider();
 imageSlider();
+
+const funcionDulce = () => {
+    console.log('hola');
+}
+
+funcionDulce();
