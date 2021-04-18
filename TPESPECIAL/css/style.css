@@ -1,0 +1,191 @@
+@font-face {
+    font-family: zara;
+    src: url(ZaraFont.otf);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-stretch: condensed;
+    overflow-x: hidden;
+}
+
+header {
+    font-family: 'Montserrat', sans-serif;
+    ;
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    background-color: transparent;
+    color: black;
+    z-index: 2;
+}
+
+.headerActive {
+    border-bottom: solid 1px black;
+    background-color: rgba(0, 0, 0, 0.637);
+    color: white;
+    z-index: 1;
+}
+
+header:hover {
+    border-bottom: solid 1px black;
+    background-color: rgba(0, 0, 0, 0.637);
+    color: white;
+    z-index: 1;
+}
+
+h1 {
+    margin: 3px;
+    font-size: 50px;
+    z-index: 5;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.navIcon {
+    align-self: flex-end;
+    padding: 4px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.titleNavOpen {
+    color: black;
+}
+
+nav {
+    font-family: 'Montserrat', sans-serif;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.911);
+    padding: 35px 0 0 4px;
+    z-index: 3;
+    transition: transform 0.5s ease-in;
+}
+
+.navBar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin: 20px 0 0 0;
+    padding: 5px 0px;
+    font-weight: bolder;
+}
+
+.navBar li {
+    margin: 5px;
+}
+
+.userLinks {
+    display: flex;
+    width: 20%;
+    align-items: flex-end;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+.userLinks ul {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    width: 100%;
+}
+
+.switchButton .icon {
+    width: 30px;
+}
+
+.imageWrapper {
+    position: relative;
+}
+
+.icon {
+    margin: 0 5px;
+    display: inherit;
+    width: 15px;
+}
+
+.images img {
+    height: 90vh;
+    width: 100%
+}
+
+.shopButton {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+}
+
+.switchButton {
+    position: absolute;
+    bottom: 5%;
+    left: 48%;
+}
+
+.shopButton a {
+    background-color: rgba(31, 31, 31, 0.678);
+    color: whitesmoke;
+    text-align: center;
+    font-size: 18pt;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+.moreInfo {
+    display: flex;
+    padding: 10px;
+}
+
+.infoItem {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-stretch: extra-condensed;
+}
+
+.infoItem img {
+    width: 50px;
+}
+
+footer {
+    display: flex;
+}
+
+.navBar-Active {
+    display: flex;
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
